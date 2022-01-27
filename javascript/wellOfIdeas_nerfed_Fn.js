@@ -1,5 +1,11 @@
-const well = (x) => {
-  let arrayOfGood = x.filter(x => x === 'good');
+const well = (givenArray) => {
+  let count = givenArray.filter(givenArray => givenArray === 'good').length;
+  if(count === 0)
+    return 'Fail!'
+  if(count <= 2)
+    return 'Publish!'
+  if(count > 2)
+    return 'I smell a series!'
 }
 
 
